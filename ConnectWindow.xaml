@@ -1,0 +1,26 @@
+﻿<Window x:Class="MySQLReader.ConnectWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MySQLReader"
+        mc:Ignorable="d"
+        Title="Подключение к базе данных" Height="300" Width="273" WindowStartupLocation="CenterScreen" Initialized="Window_Initialized" ResizeMode="NoResize" >
+    <Grid>
+        <Canvas Background="LightGray">
+            <TextBox Name="Server" TextWrapping="Wrap" Width="120" Canvas.Left="120" Canvas.Top="31"/>
+            <TextBlock Canvas.Left="33" TextWrapping="Wrap" Text="Адрес" Canvas.Top="31"/>
+            <TextBox Name="Port" TextWrapping="Wrap" Width="120" Canvas.Left="120" Canvas.Top="62"/>
+            <TextBlock Canvas.Left="33" TextWrapping="Wrap" Text="Порт" Canvas.Top="62"/>
+            <TextBox Name="Login" TextWrapping="Wrap" Width="120" Canvas.Left="120" Canvas.Top="93"/>
+            <TextBlock Canvas.Left="33" TextWrapping="Wrap" Text="Логин" Canvas.Top="93"/>
+            <PasswordBox Name="Password" Width="120" Canvas.Left="120" Canvas.Top="124"/>
+            <TextBlock Canvas.Left="33" TextWrapping="Wrap" Text="Пароль" Canvas.Top="124"/>
+            <TextBox Name="DB" TextWrapping="Wrap" Width="120" Canvas.Left="120" Canvas.Top="155"/>
+            <TextBlock Canvas.Left="33" TextWrapping="Wrap" Text="База данных" Canvas.Top="155"/>
+            <Button Content="Подключиться" Height="25" Width="100" Canvas.Left="86" Canvas.Top="217" Click="Button_Click"/>
+        </Canvas>
+
+
+    </Grid>
+</Window>
